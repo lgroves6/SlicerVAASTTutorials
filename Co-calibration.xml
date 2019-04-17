@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<PlusConfiguration version="2.1">
+
+  <DataCollection StartupDelaySec="1.0">
+    <DeviceSet Name="PlusServer: ultrasonix and NDI Aurora tracking with sensors (co-calibration)"
+               Description="Broadcasting tool tracking data through OpenIGTLink "/>
+
+    <Device Id="TrackerDevice"
+            Type="NDITracker"
+            BaudRate="115200"
+            ToolReferenceFrame="Reference">
+      <DataSources>
+        <DataSource Type="Tool" Id="Jig" PortName="0"/>
+        <DataSource Type="Tool" Id="Stylus" PortName="1"/>
+      </DataSources>
+	  <OutputChannels>
+        <OutputChannel Id="TrackerChannel">
+          <DataSource Id="Jig"/>
+          <DataSource Id="Stylus"/>
+        </OutputChannel>
+		</OutputChannels>
+	</Device>
+	
+	
+	<Device Id="TrackedDevice" Type="VirtualMixer">
+      <InputChannels>
+        <InputChannel Id="TrackerChannel" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedChannel" />
+      </OutputChannels>
+    </Device>
+	
+	
+    <Device Id="CaptureDevice"
+            Type="VirtualCapture"
+            BaseFilename="RecordingTest.nrrd"
+            EnableFileCompression="TRUE"
+            EnableCapturingOnStart="FALSE">
+      <InputChannels>
+        <InputChannel Id="TrackedChannel"/>
+      </InputChannels>
+    </Device>
+	</DataCollection>
+
+  <CoordinateDefinitions>
+    <!-- Identity transform as needle is precalibrated -->
+	<Transform From="StylusTip" To="Stylus"
+      Matrix="
+        0.999865 -2.01028e-18 0.0164152 -7.64779 
+        0.000421378 0.99967 -0.0256666 -3.34647 
+        -0.0164098 0.0256701 0.999536 159.074 
+        0 0 0 1 
+        "
+       Error="0.30" Date="112317_141120" />
+  </CoordinateDefinitions>
+
+  <PlusOpenIGTLinkServer MaxNumberOfIgtlMessagesToSend="1"
+                         MaxTimeSpentWithProcessingMs="50"
+                         ListeningPort="18944"
+                         DefaultClientSendTimeoutSec="0"
+                         SendValidTransformsOnly="false"
+                         OutputChannelId="TrackedChannel">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="TRANSFORM"/>
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="StylusTipToJig"/>
+        <Transform Name="JigToReference"/>
+      </TransformNames>
+    </DefaultClientInfo>
+	
+  </PlusOpenIGTLinkServer>
+
+</PlusConfiguration>
