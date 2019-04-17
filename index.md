@@ -3,7 +3,7 @@
 Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer. 
 
 
-<img src="Media/PlusServer.PNG" alt="hi" class="inline"/>
+<img src="Media/PlusServer.PNG"/>
 
 
 
@@ -13,6 +13,7 @@ This tutorial requires tracking a stylus with a 3.125 mm ball tip and a 3D print
 ### PlusServer configuration file for sytlus and calibration apparatus 
 
 The configuration file required to steam the correct data into 3D Slicer can be found [here.](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Co-calibration.xml)
+
 ### Co-registration Process 
 
 
