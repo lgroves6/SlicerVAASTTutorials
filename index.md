@@ -165,32 +165,6 @@ This image represents how streaming medical images such as ultrasound and tracki
 </section>
 
 
-
-
-
-
-<!--   <div class="full-width-split group">
-    <div class="full-width-split__one">
-      <div class="full-width-split__inner">
-        <h2 class="headline headline--small-plus t-margin-left">3D SLICER</h2>
-        <p class="t-margin-left "><a href="#" class="btn btn--large btn--blue">OpenIGTLink</a></p>
-        <p class="t-margin-left"><a href="#" class="btn btn--large btn--blue">Your Module</a></p>
-      </div>
-    </div>
-
-    <div class="full-width-split__two">
-      <div class="full-width-split__inner">
-        <h2 class="headline headline--small-plus t-margin-left">Plus</h2>
-        <p class="t-margin-left"><a href="#" class="btn btn--large btn--yellow">Plus Server</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-  
- -->
-  <?php get_footer(); ?> 
-
-
 # SlicerVASST Tutorials
 Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer. 
 
