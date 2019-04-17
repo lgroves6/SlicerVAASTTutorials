@@ -11,4 +11,4 @@ This tutorial requires tracking a stylus with a X mm ball tip and a 3D printed c
 
 ### Co-registration Process 
 
-[GitHub](https://www.youtube.com/watch?v=gdwchohlMjI)
+[youtube](https://www.youtube.com/watch?v=gdwchohlMjI)
