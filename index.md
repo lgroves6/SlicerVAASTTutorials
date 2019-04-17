@@ -15,4 +15,4 @@ This tutorial requires tracking a stylus with a 3.125 mm ball tip and a 3D print
 The configuration file required to steam the correct data into 3D Slicer can be found [here.](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Co-calibration.xml)
 ### Co-registration Process 
 
-<source src= "/Media/co-cal.mp4" type = "video/mp4"> </video>
+
