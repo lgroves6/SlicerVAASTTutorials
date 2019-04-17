@@ -1,8 +1,8 @@
 
 <div class="generic-content">
 
-<h3 class="headline headline--medium t-center" style="background-color: white;"><a href="<?php echo site_url('/slicer-roadmap') ?>">INTRODUCTION</a></h3>
-<div style="background-color: #D7E3ED;background-size: contain; color: black; overflow-x:scroll; ">
+<h3 style="background-color: white;">INTRODUCTION</h3>
+<div style="background-color: #D7E3ED;background-size: contain; color: black;  ">
 <!-- <h4 style= "padding-right:2%; padding-left:2%; padding-top:1%; text-align-last: left;"> -->
 <p style ="padding-right: 2%; padding-left: 2%; padding-top: 1%; text-align-last: left;" >
 This blog provides an overview of the 3D Slicer architecture and module development with a focus on image-guided therapy (IGT) scripted modules. There are two main components required to develop an IGT module, which are explained in detail in this blog: (1) a platform for data capture and broadcasting (commonly using the Plus library, <a href = "https://plustoolkit.github.io/"> PlusServer </a>), (2) the 3D SlicerIGT Extension to receive the broadcasted data in Slicer for further processing and visualization. Sample code is also provided for reference and to facilitate implementation of these modules.
