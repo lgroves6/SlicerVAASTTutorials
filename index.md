@@ -2,9 +2,9 @@
 # SlicerVASST Tutorials
 Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer. 
 
-<html>
+
 <img src="/Media/PlusServer.PNG" alt="hi" class="inline"/>
-</html>
+
 
 
 ## Co-registration between HTC VIVE and spatial tracking systems 
