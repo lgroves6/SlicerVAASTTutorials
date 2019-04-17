@@ -11,4 +11,4 @@ This tutorial requires tracking a stylus with a X mm ball tip and a 3D printed c
 
 ### Co-registration Process 
 
-<source src= "https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/co-cal.mp4" type = "video/mp4"> </video>
+<source src= "/Media/co-cal.mp4" type = "video/mp4"> </video>
