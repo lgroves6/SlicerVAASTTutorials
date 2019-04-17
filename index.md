@@ -2,4 +2,4 @@
 
 ## Slicer Architecture 
 
-![Slicer Architecture](/Media/SlicerMap)
+![Slicer Architecture](../Media/SlicerMap)
