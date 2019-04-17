@@ -1,21 +1,3 @@
-
-<?php get_header(); ?> 
-
-<!--  <div class="page-banner" style="color: #2D054D;background-size: auto;">
-    <div class="page-banner__content container container t-center c-white" style="padding-top: 2%;background-size: auto; ">
-      <h2 class="headline headline--title" style="color:white;"> Tutorial for Developing Image-Guided Intervention Modules Using 3D Slicer </h2>
-    </div>  
-  </div> -->
-
-  <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/banner.png') ?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title t-center">Tutorial for Developing Image-Guided Intervention Modules Using 3D Slicer</h1>
-      <div class="page-banner__intro t-center">
-      </div>
-    </div>  
-  </div>
-
   <section>
   <div class="vertical-menu">
      <h2 class="headline headline--medium t-center" style="background-color: white; color: #2D054D; padding-left:0; padding-right:0">CONTENTS</h2>
