@@ -6,8 +6,7 @@ This tutorial requires tracking a stylus with a X mm ball tip and a 3D printed c
 
 ### PlusServer configuration file for sytlus and calibration apparatus 
 
-
-![GitHub Logo](/Media/PlusServer.PNG)
+<img src="/Media/PlusServer.PNG" alt="hi" class="inline"/>
 
 ### Co-registration Process 
 
