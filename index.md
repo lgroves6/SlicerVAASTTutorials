@@ -2,10 +2,7 @@
 # SlicerVASST Tutorials
 Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer
 
-
-<img src="Media/PlusServer.PNG" alt = "hi"/>
-
-
+<img src="Media/PlusServer.PNG"/>
 
 ## Co-registration between HTC VIVE and spatial tracking systems 
 This tutorial requires tracking a stylus with a 3.125 mm ball tip and a 3D printed calibration apparatus using the following stl. A sensor must be fixed to the apparatus in order to track it properly. The transforms associated with the sensors fixed to the tools will be streamed into Slicer using the following configuration file and the PlusServer. 
@@ -17,3 +14,6 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 ### Co-registration Process 
 
 
+<video width="320" height="240" controls>
+  <source type="video/mp4" src="https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/co-cal.mp4">
+</video>
