@@ -14,4 +14,7 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 ### Co-registration Process 
 
 
+The stl for the calibration apparatus can be found [here.](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Vive_Controller_Jig.stl)
+
+
 [![Co-calibration demo](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/YoutubeScreencap.PNG)](https://www.youtube.com/watch?v=xRixBN41xmU&feature=youtu.be)
