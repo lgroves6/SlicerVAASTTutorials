@@ -13,4 +13,4 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 
 ### Co-registration Process 
 
-[![IMAGE ALT TEXT HERE](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/Youtube%20Screencap.PNG)](https://www.youtube.com/watch?v=xRixBN41xmU&feature=youtu.be)
+[![Co-calibration demo](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/YoutubeScreencap.PNG)](https://www.youtube.com/watch?v=xRixBN41xmU&feature=youtu.be)
