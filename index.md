@@ -15,5 +15,5 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 
 
 <video width="320" height="240" controls>
-  <source type="video/mp4" src="https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/co-cal.mp4">
+  <source type="video/mp4" src="https://github.com/lgroves6/SlicerVAASTTutorials/tree/master/Media">
 </video>
