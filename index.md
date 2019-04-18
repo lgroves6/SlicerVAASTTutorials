@@ -13,7 +13,10 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 
 ### Co-registration Process 
 
-
-<video width="320" height="240" controls>
-  <source type="video/mp4" src="https://github.com/lgroves6/SlicerVAASTTutorials/tree/master/Media">
-</video>
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
+  <param name="wmode" value="transparent" />
+  <embed src="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
