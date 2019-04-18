@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<PlusConfiguration version="2.1">
+
+  <DataCollection StartupDelaySec="1.0">
+    <DeviceSet Name="PlusServer: NDI Aurora tracking with sensors (Jig and Stylus for co-calibration)"
+               Description="Broadcasting tool tracking data through OpenIGTLink "/>
+
+    <Device Id="TrackerDevice"
+            Type="NDITracker"
+            BaudRate="115200"
+            ToolReferenceFrame="Reference">
+      <DataSources>
+        <DataSource Type="Tool" Id="Jig" PortName="0"/>
+        <DataSource Type="Tool" Id="Stylus" PortName="1"/>
+      </DataSources>
+	  <OutputChannels>
+        <OutputChannel Id="TrackerChannel">
+          <DataSource Id="Jig"/>
+          <DataSource Id="Stylus"/>
+        </OutputChannel>
+		</OutputChannels>
+	</Device>
+	
+	
+	<Device Id="TrackedDevice" Type="VirtualMixer">
+      <InputChannels>
+        <InputChannel Id="TrackerChannel" />
+      </InputChannels>
+      <OutputChannels>
+        <OutputChannel Id="TrackedChannel" />
+      </OutputChannels>
+    </Device>
+	
+	
+    <Device Id="CaptureDevice"
+            Type="VirtualCapture"
+            BaseFilename="RecordingTest.nrrd"
+            EnableFileCompression="TRUE"
+            EnableCapturingOnStart="FALSE">
+      <InputChannels>
+        <InputChannel Id="TrackedChannel"/>
+      </InputChannels>
+    </Device>
+	</DataCollection>
+
+  <CoordinateDefinitions>
+    <!-- Replace with the StylusTipToStylus Transformation matrix from Pivot Cal in SlicerIGT extension -->
+	<Transform From="StylusTip" To="Stylus"
+      Matrix=" 
+        1 0 0 0 
+        0 1 0 0 
+        0 0 1 0 
+        0 0 0 0
+        "
+       Error="0.0" Date="112317_141120" />
+  </CoordinateDefinitions>
+
+  <PlusOpenIGTLinkServer MaxNumberOfIgtlMessagesToSend="1"
+                         MaxTimeSpentWithProcessingMs="50"
+                         ListeningPort="18944"
+                         DefaultClientSendTimeoutSec="0"
+                         SendValidTransformsOnly="false"
+                         OutputChannelId="TrackedChannel">
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="TRANSFORM"/>
+      </MessageTypes>
+      <TransformNames>
+        <Transform Name="StylusTipToJig"/>
+        <Transform Name="JigToReference"/>
+      </TransformNames>
+    </DefaultClientInfo>
+	
+  </PlusOpenIGTLinkServer>
+
+</PlusConfiguration>
