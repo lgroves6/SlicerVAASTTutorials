@@ -13,14 +13,4 @@ The configuration file required to steam the correct data into 3D Slicer can be 
 
 ### Co-registration Process 
 
-<div class="embed-container">
-  <iframe
-      src="https://www.youtube.com/user/kyle"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
-
 [![IMAGE ALT TEXT HERE](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/Youtube%20Screencap.PNG)](https://www.youtube.com/watch?v=xRixBN41xmU&feature=youtu.be)
