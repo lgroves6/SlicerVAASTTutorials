@@ -18,3 +18,5 @@ The stl for the calibration apparatus can be found [here.](https://github.com/lg
 
 
 [![Co-calibration demo](https://github.com/lgroves6/SlicerVAASTTutorials/blob/master/Media/YoutubeScreencap.PNG)](https://www.youtube.com/watch?v=xRixBN41xmU&feature=youtu.be)
+
+The source code for this module is available [here.](https://github.com/lgroves6/SlicerVAASTTutorials/tree/master/VIVECalibration)
