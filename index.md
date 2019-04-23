@@ -1,6 +1,6 @@
 
 # SlicerVASST Tutorials
-Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer
+Prior to using any of these tutorials please review SlicerIGT.org and PlusToolkit.org to learn how to connect to the PlusServer to stream image and tracking data into Slicer. For more background information consult http://computerassistedsurgery.robarts.ca/. 
 
 <img src="Media/PlusServer.PNG"/>
 
